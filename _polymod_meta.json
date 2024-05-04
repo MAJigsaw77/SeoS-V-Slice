@@ -1,0 +1,15 @@
+{
+	"title": "Smoke 'Em Out Struggle",
+	"description": "Just a port of Smoke 'Em Out Struggle mod to Funkin V-Slice.",
+	"contributors": [
+		{
+			"name": "MAJigsaw77"
+		},
+		{
+			"name": "sector"
+		}
+	],
+	"api_version": "0.1.0",
+	"mod_version": "1.0.0",
+	"license": "MIT"
+}
