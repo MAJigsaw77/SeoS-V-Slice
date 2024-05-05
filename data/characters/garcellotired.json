@@ -33,23 +33,8 @@
 			"offsets": [0, 0]
 		},
 		{
-			"name": "singLEFT-alt",
-			"prefix": "garcellotired Sing Note LEFT",
-			"offsets": [0, 0]
-		},
-		{
-			"name": "singDOWN-alt",
+			"name": "cough",
 			"prefix": "garcellotired cough",
-			"offsets": [0, 0]
-		},
-		{
-			"name": "singUP-alt",
-			"prefix": "garcellotired Sing Note UP",
-			"offsets": [0, 0]
-		},
-		{
-			"name": "singRIGHT-alt",
-			"prefix": "garcellotired Sing Note RIGHT",
 			"offsets": [0, 0]
 		}
 	]
