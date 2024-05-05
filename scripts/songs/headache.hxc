@@ -1,0 +1,87 @@
+import funkin.play.song.Song;
+import funkin.play.PlayState;
+import funkin.play.PlayStatePlaylist;
+import funkin.graphics.FunkinSprite;
+import funkin.audio.FunkinSound;
+import funkin.Paths;
+import flixel.util.FlxTimer;
+import flixel.FlxG;
+
+class HeadacheSong extends Song
+{
+	var hasPlayedCutscene:Bool;
+	var cityAmbience:FunkinSound;
+
+	public function new():Void
+	{
+		super('headache');
+
+		hasPlayedCutscene = false;
+	}
+
+	public override function onCountdownStart(event:CountdownScriptEvent):Void
+	{
+		super.onCountdownStart(event);
+
+		if (!PlayStatePlaylist.isStoryMode)
+			hasPlayedCutscene = true;
+
+		if (!hasPlayedCutscene)
+		{
+			hasPlayedCutscene = true;
+
+			event.cancel();
+
+			startDialogue();
+		}
+	}
+
+	private function startCutscene():Void
+	{
+		PlayState.instance.camHUD.visible = false;
+		PlayState.instance.camCutscene.visible = true;
+
+		var introText:FunkinSprite = new FunkinSprite(0, 0).loadGraphic(Paths.image('garIntroText'));
+		introText.cameras = [PlayState.instance.camCutscene];
+		introText.setGraphicSize(Std.int(introText.width * 1.5));
+		introText.updateHitbox();
+		introText.screenCenter();
+		introText.scrollFactor.set();
+		introText.zIndex = 1000000;
+		PlayState.instance.add(introText);
+
+		cityAmbience = FunkinSound.load(Paths.music('city_ambience'), 0, true);
+		cityAmbience.play(false);
+		cityAmbience.fadeIn(1, 0, 0.8);
+
+		new FlxTimer().start(5.5, function(tmr:FlxTimer):Void
+		{
+			cityAmbience.fadeOut(2.2, 0);
+
+			introText.destory();
+
+			PlayState.instance.camHUD.visible = true;
+
+			PlayState.instance.startConversation('headache');
+		});
+	}
+
+	public override function onSongRetry(event:ScriptEvent):Void
+	{
+		super.onSongRetry(event);
+
+		hasPlayedCutscene = true;
+	}
+
+	public override function onCreate(event:ScriptEvent):Void
+	{
+		super.onCreate(event);
+
+		hasPlayedCutscene = false;
+	}
+
+	public override function onDialogueEnd():Void
+	{
+		PlayState.instance.startCountdown();
+	}
+}
