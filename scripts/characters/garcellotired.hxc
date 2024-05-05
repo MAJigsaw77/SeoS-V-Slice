@@ -1,0 +1,26 @@
+import funkin.play.character.SparrowCharacter;
+import funkin.play.character.CharacterType;
+
+class GarcelloTiredCharacter extends SparrowCharacter
+{
+	public function new():Void
+	{
+		super('garcellotired');
+	}
+
+	public override function onNoteHit(event:HitNoteScriptEvent):Void
+	{
+		super.onNoteHit(event);
+
+		if (!event.note.noteData.getMustHitNote() && characterType == CharacterType.DAD)
+		{
+			switch (event.note.kind)
+			{
+				case 'cough':
+					this.holdTimer = 0;
+					this.playAnimation('cough', true, true);
+					return;
+			}
+		}
+	}
+}
