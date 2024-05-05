@@ -1,0 +1,98 @@
+{
+	"version": "1.0.0",
+	"backdrop": {
+		"type": "solid",
+		"fadeTime": 2.0,
+		"color": "#FF808080"
+	},
+	"outro": {
+		"type": "fade",
+		"fadeTime": 1.0
+	},
+	"dialogue": [
+		{
+			"speaker": "bf-norm",
+			"speakerAnimation": "talk",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "beep bop!"
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "Hhh..."
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "Hey."
+		},
+		{
+			"speaker": "bf",
+			"speakerAnimation": "default",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "ski boop?"
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "That was fun, but... my chest is starting to feel funny."
+		},
+		{
+			"speaker": "bf",
+			"speakerAnimation": "default",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "beep...?"
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "I'm not giving up just yet though. You've got some tight bars, little man."
+		},
+		{
+			"speaker": "bf",
+			"speakerAnimation": "default",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "bee bo ski bop!"
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "Oh? You want me to keep going?"
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "F-fine by me. I'm enjoying this actually."
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "One more couldn't hurt..."
+		},
+		{
+			"speaker": "gar",
+			"speakerAnimation": "nervous",
+			"box": "gar",
+			"boxAnimation": "idle",
+			"text": "...Right?"
+		}
+	]
+}
