@@ -1,0 +1,106 @@
+{
+	"props": [
+		{
+			"danceEvery": 0,
+			"zIndex": 10,
+			"position": [-500, -170],
+			"scale": [1, 1],
+			"animType": "sparrow",
+			"name": "bg",
+			"isPixel": false,
+			"assetPath": "garStagebgAlt",
+			"scroll": [0.7, 0.7],
+			"animations": []
+		},
+		{
+			"danceEvery": 0,
+			"zIndex": 20,
+			"position": [0, -290],
+			"scale": [1.7, 1.7],
+			"animType": "sparrow",
+			"name": "smoker",
+			"isPixel": false,
+			"assetPath": "garStagebgAlt",
+			"scroll": [0.7, 0.7],
+			"animations": [
+				{
+					"offsets": [0, 0],
+					"flipY": false,
+					"frameRate": 13,
+					"prefix": "smokey",
+					"looped": true,
+					"flipX": false,
+					"name": "garsmoke"
+				}
+			],
+			"startingAnimation": "garsmoke"
+		},
+		{
+			"danceEvery": 0,
+			"zIndex": 30,
+			"position": [-500, -200],
+			"scale": [1, 1],
+			"animType": "sparrow",
+			"name": "bgAlley",
+			"isPixel": false,
+			"assetPath": "garStagealt",
+			"scroll": [0.9, 0.9],
+			"animations": []
+		},
+		{
+			"danceEvery": 0,
+			"zIndex": 40,
+			"position": [-230, 540],
+			"scale": [1, 1],
+			"animType": "sparrow",
+			"name": "corpse",
+			"isPixel": false,
+			"assetPath": "gardead",
+			"scroll": [0.9, 0.9],
+			"animations": []
+		},
+		{
+			"danceEvery": 0,
+			"zIndex": 20,
+			"position": [0, 0],
+			"scale": [1.6, 1.6],
+			"animType": "sparrow",
+			"name": "smoker",
+			"isPixel": false,
+			"assetPath": "garStagebgAlt",
+			"scroll": [1.1, 1.1],
+			"animations": [
+				{
+					"offsets": [0, 0],
+					"flipY": false,
+					"frameRate": 15,
+					"prefix": "smokey",
+					"looped": true,
+					"flipX": false,
+					"name": "garsmoke"
+				}
+			],
+			"startingAnimation": "garsmoke"
+		},
+	],
+	"cameraZoom": 0.9,
+	"version": "1.0.0",
+	"characters": {
+		"bf": {
+			"zIndex": 300,
+			"position": [989.5, 885],
+			"cameraOffsets": [-100, -100]
+		},
+		"dad": {
+			"zIndex": 200,
+			"position": [335, 885],
+			"cameraOffsets": [150, -100]
+		},
+		"gf": {
+			"zIndex": 100,
+			"cameraOffsets": [0, 0],
+			"position": [751.5, 787]
+		}
+	},
+	"name": "Garcello Alley Dead"
+}
