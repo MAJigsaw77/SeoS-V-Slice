@@ -1,0 +1,26 @@
+import funkin.play.character.SparrowCharacter;
+import funkin.play.character.CharacterType;
+
+class GarcelloGhostyCharacter extends SparrowCharacter
+{
+	public function new():Void
+	{
+		super('garcelloghosty');
+	}
+
+	public override function onNoteHit(event:HitNoteScriptEvent):Void
+	{
+		super.onNoteHit(event);
+
+		if (!event.note.noteData.getMustHitNote() && this.characterType == CharacterType.DAD)
+		{
+			switch (event.note.kind)
+			{
+				case 'coolguy':
+					this.holdTimer = 0;
+					this.playAnimation('coolguy', true, true);
+					return;
+			}
+		}
+	}
+}
