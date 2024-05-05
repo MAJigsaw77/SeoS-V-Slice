@@ -10,10 +10,11 @@ class GarDialogueBox extends DialogueBox
 		super('gar');
 	}
 
-	public override function loadText(event:DialogueScriptEvent):Void
+	public override function loadText():Void
 	{
-		super.loadText(event);
+		super.loadText();
 
-		this.textDisplay.sounds = [FunkinSound.load(Paths.sound('Generic_Text'), 0.8)];
+		if (this.textDisplay != null)
+			this.textDisplay.sounds = [FunkinSound.load(Paths.sound('Generic_Text'), 0.8)];
 	}
 }
