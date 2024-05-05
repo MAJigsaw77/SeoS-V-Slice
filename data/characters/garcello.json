@@ -1,0 +1,36 @@
+{
+	"version": "1.0.0",
+	"name": "Garcello",
+	"assetPath": "characters/garcello_assets",
+	"healthIcon": {
+		"id": "gar",
+		"flipX": false
+	},
+	"animations": [
+		{
+			"name": "idle",
+			"prefix": "garcello idle dance",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singLEFT",
+			"prefix": "garcello Sing Note LEFT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singDOWN",
+			"prefix": "garcello Sing Note DOWN",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singUP",
+			"prefix": "garcello Sing Note UP",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singRIGHT",
+			"prefix": "garcello Sing Note RIGHT",
+			"offsets": [0, 0]
+		}
+	]
+}
