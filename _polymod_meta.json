@@ -1,12 +1,17 @@
 {
 	"title": "Smoke 'Em Out Struggle",
 	"description": "Just a port of Smoke 'Em Out Struggle mod to Funkin V-Slice.",
+	"homepage": "https://github.com/MAJigsaw77/SeoS-V-Slice",
 	"contributors": [
 		{
-			"name": "MAJigsaw77"
+			"name": "MAJigsaw77",
+			"role": "Main Programmer",
+			"url": "https://github.com/MAJigsaw77"
 		},
 		{
-			"name": "sector"
+			"name": "sector",
+			"role": "Chart Convertor",
+			"url": "https://github.com/sector-a"
 		}
 	],
 	"api_version": "0.1.0",
