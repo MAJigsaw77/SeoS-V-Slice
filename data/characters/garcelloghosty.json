@@ -1,0 +1,42 @@
+{
+	"version": "1.0.0",
+	"name": "Garcello Ghosty",
+	"assetPath": "characters/garcelloghosty_assets",
+	"healthIcon": {
+		"id": "garfade",
+		"flipX": false
+	},
+	"animations": [
+		{
+			"name": "idle",
+			"prefix": "garcello idle dance",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singLEFT",
+			"prefix": "garcello Sing Note LEFT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singDOWN",
+			"prefix": "garcello Sing Note DOWN",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singUP",
+			"prefix": "garcello Sing Note UP",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singRIGHT",
+			"prefix": "garcello Sing Note RIGHT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "garFarewell",
+			"prefix": "garcello coolguy",
+			"frameRate": 15,
+			"offsets": [0, 0]
+		}
+	]
+}
