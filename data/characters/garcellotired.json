@@ -1,0 +1,56 @@
+{
+	"version": "1.0.0",
+	"name": "Garcello Tired",
+	"assetPath": "characters/garcellotired_assets",
+	"healthIcon": {
+		"id": "gartired",
+		"flipX": false
+	},
+	"animations": [
+		{
+			"name": "idle",
+			"prefix": "garcellotired idle dance",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singLEFT",
+			"prefix": "garcellotired Sing Note LEFT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singDOWN",
+			"prefix": "garcellotired Sing Note DOWN",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singUP",
+			"prefix": "garcellotired Sing Note UP",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singRIGHT",
+			"prefix": "garcellotired Sing Note RIGHT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singLEFT-alt",
+			"prefix": "garcellotired Sing Note LEFT",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singDOWN-alt",
+			"prefix": "garcellotired cough",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singUP-alt",
+			"prefix": "garcellotired Sing Note UP",
+			"offsets": [0, 0]
+		},
+		{
+			"name": "singRIGHT-alt",
+			"prefix": "garcellotired Sing Note RIGHT",
+			"offsets": [0, 0]
+		}
+	]
+}
