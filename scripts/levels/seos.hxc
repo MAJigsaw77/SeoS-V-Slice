@@ -1,0 +1,27 @@
+import funkin.ui.story.Level;
+import funkin.save.Save;
+
+class SeosLevel extends Level
+{
+	public function new():Void
+	{
+		super('seos');
+	}
+
+	public override function onCreate(event:ScriptEvent):Void
+	{
+		super.onCreate(event);
+
+		this.weekData.length += 1;
+	}
+
+	public override function isUnlocked():Bool
+	{
+		return true;
+	}
+
+	public override getSongDisplayNames(difficultyId:String):Array<String>
+	{
+		return ['Headache', 'Nerves', 'Release', 'Fading'];
+	}
+}
