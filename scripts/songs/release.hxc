@@ -1,6 +1,5 @@
-import flixel.FlxG;
-import flixel.FlxSprite;
 import flixel.util.FlxTimer;
+import flixel.FlxG;
 import funkin.audio.FunkinSound;
 import funkin.graphics.FunkinSprite;
 import funkin.play.cutscene.VideoCutscene;
