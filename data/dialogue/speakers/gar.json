@@ -1,0 +1,35 @@
+{
+	"version": "1.0.0",
+	"name": "Garcello",
+	"assetPath": "gardialogue",
+	"flipX": false,
+	"isPixel": false,
+	"scale": 1,
+	"offsets": [110, 117],
+	"animations": [
+		{
+			"name": "default",
+			"prefix": "gar Default",
+			"offsets": [0, 0],
+			"looped": false
+		},
+		{
+			"name": "nervous",
+			"prefix": "gar Nervous",
+			"offsets": [0, 0],
+			"looped": false
+		},
+		{
+			"name": "ghost",
+			"prefix": "gar Ghost",
+			"offsets": [0, 0],
+			"looped": false
+		},
+		{
+			"name": "dippy",
+			"prefix": "gar Dippy",
+			"offsets": [0, 0],
+			"looped": false
+		}
+	]
+}
