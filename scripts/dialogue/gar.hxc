@@ -1,0 +1,19 @@
+import funkin.play.cutscene.dialogue.DialogueBox;
+import funkin.play.PlayState;
+import funkin.audio.FunkinSound;
+import funkin.Paths;
+
+class GarDialogueBox extends DialogueBox
+{
+	public function new():Void
+	{
+		super('gar');
+	}
+
+	public override function loadText(event:DialogueScriptEvent):Void
+	{
+		super.loadText(event);
+
+		this.textDisplay.sounds = [FunkinSound.load(Paths.sound('Generic_Text'), 0.8)];
+	}
+}
