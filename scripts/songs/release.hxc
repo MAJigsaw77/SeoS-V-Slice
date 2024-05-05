@@ -1,0 +1,79 @@
+import flixel.FlxG;
+import flixel.FlxSprite;
+import flixel.util.FlxTimer;
+import funkin.audio.FunkinSound;
+import funkin.graphics.FunkinSprite;
+import funkin.play.cutscene.VideoCutscene;
+import funkin.play.song.Song;
+import funkin.play.PlayState;
+import funkin.Paths;
+
+class ReleaseSong extends Song
+{
+	var hasPlayedCutscene:Bool;
+	var hasPlayedInGameCutscene:Bool;
+
+	public function new():Void
+	{
+		super('release');
+
+		hasPlayedCutscene = false;
+		hasPlayedInGameCutscene = false;
+	}
+
+	public override function onCountdownStart(event:CountdownScriptEvent):Void
+	{
+		super.onCountdownStart(event);
+
+		if (!PlayStatePlaylist.isStoryMode)
+		{
+			hasPlayedCutscene = true;
+			hasPlayedInGameCutscene = true;
+		}
+
+		if (hasPlayedCutscene && !hasPlayedInGameCutscene)
+		{
+			hasPlayedInGameCutscene = true;
+
+			event.cancel();
+
+			PlayState.instance.camHUD.visible = false;
+
+			FlxG.sound.play(Paths.sound('Wind_Fadeout'));
+
+			FlxG.camera.fade(0xFFFFFFFF, 5, true, function():Void
+			{
+				PlayState.instance.camHUD.visible = true;
+
+				PlayState.instance.startConversation('release');
+			}, true);
+		}
+
+		if (!hasPlayedCutscene)
+		{
+			hasPlayedCutscene = true;
+
+			event.cancel();
+
+			PlayState.instance.camHUD.visible = false;
+
+			VideoCutscene.play(Paths.videos('garcutscene'));
+		}
+	}
+
+	public override function onSongRetry(event:ScriptEvent)
+	{
+		super.onSongRetry(event);
+
+		hasPlayedCutscene = true;
+		hasPlayedInGameCutscene = true;
+	}
+
+	public override function onCreate(event:ScriptEvent):Void
+	{
+		super.onCreate(event);
+
+		hasPlayedCutscene = false;
+		hasPlayedInGameCutscene = false;
+	}
+}
