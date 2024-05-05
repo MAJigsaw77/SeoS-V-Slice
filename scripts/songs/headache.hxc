@@ -1,11 +1,10 @@
-import funkin.play.song.Song;
-import funkin.play.PlayState;
-import funkin.play.PlayStatePlaylist;
-import funkin.graphics.FunkinSprite;
-import funkin.audio.FunkinSound;
-import funkin.Paths;
 import flixel.util.FlxTimer;
 import flixel.FlxG;
+import funkin.audio.FunkinSound;
+import funkin.graphics.FunkinSprite;
+import funkin.play.song.Song;
+import funkin.play.PlayState;
+import funkin.Paths;
 
 class HeadacheSong extends Song
 {
@@ -43,7 +42,7 @@ class HeadacheSong extends Song
 
 		var introText:FunkinSprite = new FunkinSprite(0, 0).loadGraphic(Paths.image('garIntroText'));
 		introText.cameras = [PlayState.instance.camCutscene];
-		introText.setGraphicSize(Std.int(introText.width * 1.5));
+		introText.setGraphicSize(Std.int(introText.width * 1.4));
 		introText.updateHitbox();
 		introText.screenCenter();
 		introText.scrollFactor.set();
@@ -82,6 +81,6 @@ class HeadacheSong extends Song
 
 	public override function onDialogueEnd():Void
 	{
-		PlayState.instance.startCountdown();
+		Countdown.performCountdown();
 	}
 }
