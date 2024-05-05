@@ -33,6 +33,7 @@
 					"name": "garsmoke"
 				}
 			],
+			"alpha": 0.3,
 			"startingAnimation": "garsmoke"
 		},
 		{
@@ -81,7 +82,7 @@
 				}
 			],
 			"startingAnimation": "garsmoke"
-		},
+		}
 	],
 	"cameraZoom": 0.9,
 	"version": "1.0.0",
