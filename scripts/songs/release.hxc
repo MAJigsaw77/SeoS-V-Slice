@@ -6,6 +6,7 @@ import funkin.graphics.FunkinSprite;
 import funkin.play.cutscene.VideoCutscene;
 import funkin.play.song.Song;
 import funkin.play.PlayState;
+import funkin.play.PlayStatePlaylist;
 import funkin.Paths;
 
 class ReleaseSong extends Song
