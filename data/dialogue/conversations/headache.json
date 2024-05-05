@@ -3,7 +3,7 @@
 	"backdrop": {
 		"type": "solid",
 		"fadeTime": 2.0,
-		"color": "#BF808080"
+		"color": "#FF808080"
 	},
 	"outro": {
 		"type": "fade",
