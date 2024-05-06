@@ -43,7 +43,7 @@ class HeadacheSong extends Song
 
 		var introText:FunkinSprite = new FunkinSprite(0, 0).loadGraphic(Paths.image('garIntroText'));
 		introText.cameras = [PlayState.instance.camCutscene];
-		introText.setGraphicSize(Std.int(introText.width * 1.4));
+		introText.setGraphicSize(Std.int(introText.width * 1.6));
 		introText.updateHitbox();
 		introText.screenCenter();
 		introText.scrollFactor.set();
