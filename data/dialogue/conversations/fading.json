@@ -3,7 +3,7 @@
 	"backdrop": {
 		"type": "solid",
 		"fadeTime": 2.0,
-		"color": "#B3DFD8"
+		"color": "#FFB3DFD8"
 	},
 	"music": {
 		"asset": "city_ambience",
