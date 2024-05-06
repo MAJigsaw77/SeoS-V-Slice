@@ -77,6 +77,11 @@ class ReleaseSong extends Song
 		hasPlayedInGameCutscene = false;
 	}
 
+	public override function onDialogueEnd():Void
+	{
+		Countdown.performCountdown();
+	}
+
 	public override function onStepHit(event:SongTimeScriptEvent):Void
 	{
 		super.onStepHit(event);
