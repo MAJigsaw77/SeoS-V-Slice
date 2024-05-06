@@ -5,7 +5,7 @@
 	"flipX": false,
 	"isPixel": false,
 	"scale": 1,
-	"offsets": [110, 117],
+	"offsets": [130, 100],
 	"animations": [
 		{
 			"name": "default",
