@@ -10,32 +10,50 @@
 		{
 			"name": "idle",
 			"prefix": "garcellotired idle dance",
-			"offsets": [0, 0]
+			"offsets": [
+				0,
+				0
+			]
 		},
 		{
 			"name": "singLEFT",
 			"prefix": "garcellotired Sing Note LEFT",
-			"offsets": [0, 0]
+			"offsets": [
+				0,
+				0
+			]
 		},
 		{
 			"name": "singDOWN",
 			"prefix": "garcellotired Sing Note DOWN",
-			"offsets": [0, 0]
+			"offsets": [
+				0,
+				0
+			]
 		},
 		{
 			"name": "singUP",
 			"prefix": "garcellotired Sing Note UP",
-			"offsets": [0, 0]
+			"offsets": [
+				0,
+				0
+			]
 		},
 		{
 			"name": "singRIGHT",
 			"prefix": "garcellotired Sing Note RIGHT",
-			"offsets": [0, 0]
+			"offsets": [
+				0,
+				0
+			]
 		},
 		{
 			"name": "cough",
 			"prefix": "garcellotired cough",
-			"offsets": [0, 0]
+			"offsets": [
+				0,
+				0
+			]
 		}
 	]
 }

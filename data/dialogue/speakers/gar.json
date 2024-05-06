@@ -5,30 +5,45 @@
 	"flipX": false,
 	"isPixel": false,
 	"scale": 1,
-	"offsets": [130, 100],
+	"offsets": [
+		130,
+		100
+	],
 	"animations": [
 		{
 			"name": "default",
 			"prefix": "gar Default",
-			"offsets": [0, 0],
+			"offsets": [
+				0,
+				0
+			],
 			"looped": false
 		},
 		{
 			"name": "nervous",
 			"prefix": "gar Nervous",
-			"offsets": [0, 0],
+			"offsets": [
+				0,
+				0
+			],
 			"looped": false
 		},
 		{
 			"name": "ghost",
 			"prefix": "gar Ghost",
-			"offsets": [0, 0],
+			"offsets": [
+				0,
+				0
+			],
 			"looped": false
 		},
 		{
 			"name": "dippy",
 			"prefix": "gar Dippy",
-			"offsets": [0, 0],
+			"offsets": [
+				0,
+				0
+			],
 			"looped": false
 		}
 	]

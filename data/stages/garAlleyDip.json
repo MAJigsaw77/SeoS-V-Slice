@@ -3,37 +3,64 @@
 		{
 			"danceEvery": 0,
 			"zIndex": 10,
-			"position": [-500, -170],
-			"scale": [1, 1],
+			"position": [
+				-500,
+				-170
+			],
+			"scale": [
+				1,
+				1
+			],
 			"animType": "sparrow",
 			"name": "bg",
 			"isPixel": false,
 			"assetPath": "garStagebgRise",
-			"scroll": [0.7, 0.7],
+			"scroll": [
+				0.7,
+				0.7
+			],
 			"animations": []
 		},
 		{
 			"danceEvery": 0,
 			"zIndex": 20,
-			"position": [-500, -200],
-			"scale": [1, 1],
+			"position": [
+				-500,
+				-200
+			],
+			"scale": [
+				1,
+				1
+			],
 			"animType": "sparrow",
 			"name": "bgAlley",
 			"isPixel": false,
 			"assetPath": "garStageRise",
-			"scroll": [0.9, 0.9],
+			"scroll": [
+				0.9,
+				0.9
+			],
 			"animations": []
 		},
 		{
 			"danceEvery": 0,
 			"zIndex": 30,
-			"position": [-230, 540],
-			"scale": [1, 1],
+			"position": [
+				-230,
+				540
+			],
+			"scale": [
+				1,
+				1
+			],
 			"animType": "sparrow",
 			"name": "corpse",
 			"isPixel": false,
 			"assetPath": "gardead",
-			"scroll": [0.9, 0.9],
+			"scroll": [
+				0.9,
+				0.9
+			],
 			"animations": []
 		}
 	],
@@ -42,18 +69,36 @@
 	"characters": {
 		"bf": {
 			"zIndex": 300,
-			"position": [989.5, 885],
-			"cameraOffsets": [-100, -100]
+			"position": [
+				989.5,
+				885
+			],
+			"cameraOffsets": [
+				-100,
+				-100
+			]
 		},
 		"dad": {
 			"zIndex": 200,
-			"position": [335, 885],
-			"cameraOffsets": [150, -100]
+			"position": [
+				335,
+				885
+			],
+			"cameraOffsets": [
+				150,
+				-100
+			]
 		},
 		"gf": {
 			"zIndex": 100,
-			"cameraOffsets": [0, 0],
-			"position": [751.5, 787]
+			"cameraOffsets": [
+				0,
+				0
+			],
+			"position": [
+				751.5,
+				787
+			]
 		}
 	},
 	"name": "Garcello Alley Dip"

@@ -5,6 +5,11 @@
 		"fadeTime": 2.0,
 		"color": "#FF808080"
 	},
+	"music": {
+		"asset": "Lunchbox",
+		"fadeTime": 2.0,
+		"looped": true
+	},
 	"outro": {
 		"type": "fade",
 		"fadeTime": 1.0
@@ -15,112 +20,144 @@
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["beep"]
+			"text": [
+				"beep"
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["What's up, little man?"]
+			"text": [
+				"What's up, little man?"
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Did the smoke catch your attention?"]
+			"text": [
+				"Did the smoke catch your attention?"
+			]
 		},
 		{
 			"speaker": "bf-norm",
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["bee bop"]
+			"text": [
+				"bee bop"
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Yeah, it's pretty cool. You should try it out."]
+			"text": [
+				"Yeah, it's pretty cool. You should try it out."
+			]
 		},
 		{
 			"speaker": "bf-norm",
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["beep bo"]
+			"text": [
+				"beep bo"
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Are ya sure? Come on..."]
+			"text": [
+				"Are ya sure? Come on..."
+			]
 		},
 		{
 			"speaker": "bf-norm",
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["beep bo"]
+			"text": [
+				"beep bo"
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Hm..."]
+			"text": [
+				"Hm..."
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Tell you what."]
+			"text": [
+				"Tell you what."
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["If you beat me in a friendly little rap battle, I'll get off your case."]
+			"text": [
+				"If you beat me in a friendly little rap battle, I'll get off your case."
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Sound cool, little man?"]
+			"text": [
+				"Sound cool, little man?"
+			]
 		},
 		{
 			"speaker": "bf-norm",
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["beep bo bop!"]
+			"text": [
+				"beep bo bop!"
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Heh, that got you hyped up. It's settled then."]
+			"text": [
+				"Heh, that got you hyped up. It's settled then."
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["As long as you don't mind me smoking a bit."]
+			"text": [
+				"As long as you don't mind me smoking a bit."
+			]
 		},
 		{
 			"speaker": "gar",
 			"speakerAnimation": "default",
 			"box": "gar",
 			"boxAnimation": "idle",
-			"text": ["Helps calm the nerves, y'know?"]
+			"text": [
+				"Helps calm the nerves, y'know?"
+			]
 		}
 	]
 }
