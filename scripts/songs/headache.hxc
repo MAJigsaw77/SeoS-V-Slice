@@ -50,13 +50,13 @@ class HeadacheSong extends Song
 		introText.zIndex = 1000000;
 		PlayState.instance.add(introText);
 
-		cityAmbience = FunkinSound.load(Paths.music('city_ambience'), 0, true);
+		/*cityAmbience = FunkinSound.load(Paths.music('city_ambience'), 0, true);
 		cityAmbience.play(false);
-		cityAmbience.fadeIn(1, 0, 0.8);
+		cityAmbience.fadeIn(1, 0, 0.8);*/
 
 		new FlxTimer().start(5.5, function(tmr:FlxTimer):Void
 		{
-			cityAmbience.fadeOut(2.2, 0);
+			//cityAmbience.fadeOut(2.2, 0);
 
 			PlayState.instance.remove(introText);
 			PlayState.instance.camHUD.visible = true;
