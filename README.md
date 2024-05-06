@@ -1,4 +1,4 @@
-# Smoke 'Em Out Struggle Funkin V-Slice 
+# Seos V-Slice 
 
 Just a port of [Smoke 'Em Out Struggle](https://gamebanana.com/mods/166531) to Funkin V-Slice.
 
