@@ -5,7 +5,7 @@
 	"isPixel": true,
 	"flipX": false,
 	"flipY": false,
-	"offsets": [-20, 20],
+	"offsets": [-20, 40],
 	"scale": 5.4,
 	"text": {
 		"offsets": [225, 450],
