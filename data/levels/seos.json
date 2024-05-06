@@ -5,10 +5,10 @@
 	"props": [
 		{
 			"assetPath": "storymenu/props/garcello",
-			"scale": 1.0,
+			"scale": 0.6,
 			"offsets": [
 				100,
-				-60
+				50
 			],
 			"animations": [
 				{
