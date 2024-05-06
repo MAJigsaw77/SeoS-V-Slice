@@ -13,7 +13,7 @@
 		"color": "#FFFFFFFF",
 		"fontFamily": "Pixel Arial 11 Bold",
 		"shadowColor": "#00000000",
-		"shadowWidth": 0
+		"shadowWidth": 2
 	},
 	"animations": [
 		{
