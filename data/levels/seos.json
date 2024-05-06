@@ -4,11 +4,11 @@
 	"titleAsset": "storymenu/titles/seos",
 	"props": [
 		{
-			"assetPath": "storymenu/props/dad",
+			"assetPath": "storymenu/props/garcello",
 			"scale": 1.0,
 			"offsets": [
 				100,
-				60
+				-60
 			],
 			"animations": [
 				{
