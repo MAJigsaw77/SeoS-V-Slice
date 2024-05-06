@@ -12,7 +12,7 @@
 		"width": 900,
 		"color": "#FF0DF07E",
 		"fontFamily": "Pixel Arial 11 Bold",
-		"shadowColor": "#00000000",
+		"shadowColor": "#FF000000",
 		"shadowWidth": 2
 	},
 	"animations": [
