@@ -20,7 +20,7 @@
 			"animType": "sparrow",
 			"name": "smoker",
 			"isPixel": false,
-			"assetPath": "garStagebgAlt",
+			"assetPath": "garSmoke",
 			"scroll": [0.7, 0.7],
 			"animations": [
 				{
@@ -68,7 +68,7 @@
 			"animType": "sparrow",
 			"name": "smoker",
 			"isPixel": false,
-			"assetPath": "garStagebgAlt",
+			"assetPath": "garSmoke",
 			"scroll": [1.1, 1.1],
 			"animations": [
 				{
