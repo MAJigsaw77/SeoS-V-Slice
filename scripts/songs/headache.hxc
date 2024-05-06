@@ -52,7 +52,7 @@ class HeadacheSong extends Song
 
 		cityAmbience = FunkinSound.load(Paths.music('city_ambience'), 0, true);
 		cityAmbience.play(false);
-		cityAmbience.fadeIn(1, 0, 0.8);*/
+		cityAmbience.fadeIn(1, 0, 0.8);
 
 		new FlxTimer().start(5.5, function(tmr:FlxTimer):Void
 		{
