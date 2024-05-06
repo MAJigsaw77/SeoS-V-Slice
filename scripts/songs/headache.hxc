@@ -32,7 +32,7 @@ class HeadacheSong extends Song
 
 			event.cancel();
 
-			startDialogue();
+			startCutscene();
 		}
 	}
 

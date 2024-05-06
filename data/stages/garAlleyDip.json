@@ -38,7 +38,7 @@
 		}
 	],
 	"cameraZoom": 0.9,
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"characters": {
 		"bf": {
 			"zIndex": 300,
