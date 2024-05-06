@@ -1,11 +1,11 @@
 {
 	"version": "1.1.0",
-	"name": "Garcello",
+	"name": "Garcello Dead",
 	"assetPath": "garBox",
 	"isPixel": true,
 	"flipX": false,
 	"flipY": false,
-	"offsets": [-20, 40],
+	"offsets": [-20, 45],
 	"scale": 5.4,
 	"text": {
 		"offsets": [225, 450],
