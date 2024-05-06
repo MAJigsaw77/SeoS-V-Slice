@@ -90,7 +90,7 @@ class ReleaseSong extends Song
 		{
 			case 838:
 				if (PlayState.instance.currentStage.getDad().characterId == 'garcellodead')
-					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true);
+					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true, true);
 		}
 	}
 }
