@@ -121,6 +121,6 @@
 			"box": "gar",
 			"boxAnimation": "idle",
 			"text": ["Helps calm the nerves, y'know?"]
-		},
+		}
 	]
 }
