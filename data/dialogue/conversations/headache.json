@@ -5,7 +5,6 @@
 		"fadeTime": 2.0,
 		"color": "#FF808080"
 	},
-	"music": null,
 	"outro": {
 		"type": "fade",
 		"fadeTime": 1.0
