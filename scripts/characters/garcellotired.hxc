@@ -17,8 +17,8 @@ class GarcelloTiredCharacter extends SparrowCharacter
 			switch (event.note.kind)
 			{
 				case 'cough':
-					this.holdTimer = 0;
-					this.playAnimation('cough', true, true);
+					holdTimer = 0;
+					playAnimation('cough', true, true);
 					return;
 			}
 		}
