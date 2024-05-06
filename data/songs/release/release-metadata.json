@@ -1,7 +1,7 @@
 {
   "version": "2.2.2",
   "songName": "Release",
-  "artist": "Kawai Sprite",
+  "artist": "atsuover",
   "looped": false,
   "offsets": {
     "instrumental": 0,
@@ -19,14 +19,14 @@
       "player": "bf",
       "girlfriend": "gf",
       "opponent": "garcellodead",
-      "instrumental": "mom",
+      "instrumental": "",
       "altInstrumentals": [      ]
     },
-    "stage": "mainStage",
+    "stage": "garAlleyDead",
     "noteStyle": "funkin",
     "ratings": {    },
     "previewStart": 0,
-    "previewEnd": 0
+    "previewEnd": 15000
   },
   "generatedBy": "Chart Editor Import (FNF Legacy)",
   "timeFormat": "ms",

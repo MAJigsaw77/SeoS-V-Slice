@@ -1,7 +1,7 @@
 {
   "version": "2.2.2",
   "songName": "Headache",
-  "artist": "Kawai Sprite",
+  "artist": "atsuover",
   "divisions": 96,
   "looped": false,
   "offsets": {
@@ -20,14 +20,14 @@
       "player": "bf",
       "girlfriend": "gf",
       "opponent": "garcello",
-      "instrumental": "mom",
+      "instrumental": "",
       "altInstrumentals": [      ]
     },
     "stage": "garAlley",
     "noteStyle": "funkin",
     "ratings": {    },
     "previewStart": 0,
-    "previewEnd": 0
+    "previewEnd": 15000
   },
   "generatedBy": "Chart Editor Import (FNF Legacy)",
   "timeFormat": "ms",
