@@ -76,4 +76,15 @@ class ReleaseSong extends Song
 		hasPlayedCutscene = false;
 		hasPlayedInGameCutscene = false;
 	}
+
+	public override function onStepHit(event:SongTimeScriptEvent):Void
+	{
+		super.onStepHit(event);
+
+		switch (event.step)
+		{
+			case 838:
+				PlayState.instance.currentStage.getDad().playAnimation('coolguy', true);
+		}
+	}
 }
