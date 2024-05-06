@@ -58,10 +58,8 @@ class HeadacheSong extends Song
 		{
 			cityAmbience.fadeOut(2.2, 0);
 
-			introText.destory();
-
+			PlayState.instance.remove(introText);
 			PlayState.instance.camHUD.visible = true;
-
 			PlayState.instance.startConversation('headache');
 		});
 	}
