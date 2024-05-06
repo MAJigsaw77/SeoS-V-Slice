@@ -44,7 +44,7 @@
 		},
 		{
 			"speaker": "bf",
-			"speakerAnimation": "default",
+			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
 			"text": [
@@ -62,7 +62,7 @@
 		},
 		{
 			"speaker": "bf",
-			"speakerAnimation": "default",
+			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
 			"text": [
@@ -80,7 +80,7 @@
 		},
 		{
 			"speaker": "bf",
-			"speakerAnimation": "default",
+			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
 			"text": [
