@@ -51,11 +51,11 @@
 					"prefix": "smokey",
 					"looped": true,
 					"flipX": false,
-					"name": "garsmoke"
+					"name": "idle"
 				}
 			],
 			"alpha": 0.3,
-			"startingAnimation": "garsmoke"
+			"startingAnimation": "idle"
 		},
 		{
 			"danceEvery": 0,
@@ -111,7 +111,7 @@
 				1.6
 			],
 			"animType": "sparrow",
-			"name": "smoker",
+			"name": "smokerForeground",
 			"isPixel": false,
 			"assetPath": "garSmoke",
 			"scroll": [
@@ -129,10 +129,10 @@
 					"prefix": "smokey",
 					"looped": true,
 					"flipX": false,
-					"name": "garsmoke"
+					"name": "idle"
 				}
 			],
-			"startingAnimation": "garsmoke"
+			"startingAnimation": "idle"
 		}
 	],
 	"cameraZoom": 0.9,
