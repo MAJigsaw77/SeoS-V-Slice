@@ -25,11 +25,11 @@ class ReleaseSong extends Song
 	{
 		super.onCountdownStart(event);
 
-		if (!PlayStatePlaylist.isStoryMode)
+		/*if (!PlayStatePlaylist.isStoryMode)
 		{
 			hasPlayedCutscene = true;
 			hasPlayedInGameCutscene = true;
-		}
+		}*/
 
 		if (hasPlayedCutscene && !hasPlayedInGameCutscene)
 		{
@@ -57,7 +57,8 @@ class ReleaseSong extends Song
 
 			PlayState.instance.camHUD.visible = false;
 
-			VideoCutscene.play(Paths.videos('garcutscene'));
+			// VideoCutscene.play(Paths.videos('garcutscene'));
+			VideoCutscene.play('mods/SeoS/videos/videos/garcutscene.mp4');
 		}
 	}
 
