@@ -16,9 +16,9 @@
 			450
 		],
 		"width": 900,
-		"color": "#FFFFFFFF",
+		"color": "#FFFFFF",
 		"fontFamily": "Pixel Arial 11 Bold",
-		"shadowColor": "#FF000000",
+		"shadowColor": "#000000",
 		"shadowWidth": 2
 	},
 	"animations": [
