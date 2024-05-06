@@ -51,4 +51,25 @@ class FadingSong extends Song
 	{
 		Countdown.performCountdown();
 	}
+
+	public override function onStepHit(event:SongTimeScriptEvent):Void
+	{
+		super.onStepHit(event);
+
+		switch (event.step)
+		{
+			case 240:
+				new FlxTimer().start(0.1, function(tmr:FlxTimer):Void
+				{
+					PlayState.instance.currentStage.getDad().alpha -= 0.05;
+					PlayState.instance.iconP2.alpha -= 0.05;
+
+					if (PlayState.instance.currentStage.getDad().alpha > 0)
+						tmr.reset(0.1);
+				});
+			case 247:
+				if (PlayState.instance.currentStage.getDad().characterId == 'garcelloghosty')
+					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true);
+		}
+	}
 }
