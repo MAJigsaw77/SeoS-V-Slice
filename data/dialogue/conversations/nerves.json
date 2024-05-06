@@ -43,7 +43,7 @@
 			]
 		},
 		{
-			"speaker": "bf",
+			"speaker": "bf-norm",
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
@@ -61,7 +61,7 @@
 			]
 		},
 		{
-			"speaker": "bf",
+			"speaker": "bf-norm",
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
@@ -79,7 +79,7 @@
 			]
 		},
 		{
-			"speaker": "bf",
+			"speaker": "bf-norm",
 			"speakerAnimation": "talk",
 			"box": "gar",
 			"boxAnimation": "idle",
