@@ -89,7 +89,8 @@ class ReleaseSong extends Song
 		switch (event.step)
 		{
 			case 838:
-				PlayState.instance.currentStage.getDad().playAnimation('coolguy', true);
+				if (PlayState.instance.currentStage.getDad().characterId == 'garcellodead')
+					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true);
 		}
 	}
 }
