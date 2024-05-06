@@ -69,7 +69,7 @@ class FadingSong extends Song
 				});
 			case 247:
 				if (PlayState.instance.currentStage.getDad().characterId == 'garcelloghosty')
-					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true);
+					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true, true);
 		}
 	}
 }
