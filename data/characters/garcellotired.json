@@ -24,8 +24,28 @@
 			]
 		},
 		{
+			"name": "singLEFT-hold",
+			"prefix": "garcellotired Sing Note LEFT",  
+			"looped": true,
+			"frameIndices": [0, 1, 2, 3],
+			"offsets": [
+				0,
+				0
+			]
+		},
+		{
 			"name": "singDOWN",
 			"prefix": "garcellotired Sing Note DOWN",
+			"offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"name": "singDOWN-hold",
+			"prefix": "garcellotired Sing Note DOWN",  
+			"looped": true,
+			"frameIndices": [0, 1, 2, 3],
 			"offsets": [
 				0,
 				0
@@ -40,6 +60,16 @@
 			]
 		},
 		{
+			"name": "singUP-hold",
+			"prefix": "garcellotired Sing Note UP",  
+			"looped": true,
+			"frameIndices": [0, 1, 2, 3],
+			"offsets": [
+				0,
+				0
+			]
+		},
+		{
 			"name": "singRIGHT",
 			"prefix": "garcellotired Sing Note RIGHT",
 			"offsets": [
@@ -47,6 +77,16 @@
 				0
 			]
 		},
+		{
+			"name": "singRIGHT-hold",
+			"prefix": "garcellotired Sing Note RIGHT",  
+			"looped": true,
+			"frameIndices": [0, 1, 2, 3],
+			"offsets": [
+				0,
+				0
+			]
+		}
 		{
 			"name": "cough",
 			"prefix": "garcellotired cough",
