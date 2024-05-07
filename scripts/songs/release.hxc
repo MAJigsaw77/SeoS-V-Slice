@@ -3,7 +3,6 @@ import flixel.FlxG;
 import funkin.audio.FunkinSound;
 import funkin.graphics.FunkinSprite;
 import funkin.modding.PolymodHandler;
-import funkin.play.cutscene.CutsceneType;
 import funkin.play.cutscene.VideoCutscene;
 import funkin.play.song.Song;
 import funkin.play.PlayState;
@@ -13,12 +12,14 @@ import funkin.Paths;
 class ReleaseSong extends Song
 {
 	var hasPlayedCutscene:Bool;
+	var hasPlayedInGameCutscene:Bool;
 
 	public function new():Void
 	{
 		super('release');
 
 		hasPlayedCutscene = false;
+		hasPlayedInGameCutscene = false;
 	}
 
 	public override function onCountdownStart(event:CountdownScriptEvent):Void
@@ -26,7 +27,28 @@ class ReleaseSong extends Song
 		super.onCountdownStart(event);
 
 		if (!PlayStatePlaylist.isStoryMode)
+		{
 			hasPlayedCutscene = true;
+			hasPlayedInGameCutscene = true;
+		}
+
+		if (hasPlayedCutscene && !hasPlayedInGameCutscene)
+		{
+			hasPlayedInGameCutscene = true;
+
+			event.cancel();
+
+			PlayState.instance.camHUD.visible = false;
+
+			FlxG.sound.play(Paths.sound('Wind_Fadeout'));
+
+			FlxG.camera.fade(0xFFFFFFFF, 5, true, function():Void
+			{
+				PlayState.instance.camHUD.visible = true;
+
+				PlayState.instance.startConversation('release');
+			}, true);
+		}
 
 		if (!hasPlayedCutscene)
 		{
@@ -43,21 +65,7 @@ class ReleaseSong extends Song
 				// YOU CAN'T STOP ME
 				if (Type.resolveClass('sys.FileSystem').exists(file))
 				{
-					VideoCutscene.play(file, CutsceneType.MIDSONG);
-					VideoCutscene.onVideoEnded.removeAll();
-					VideoCutscene.onVideoEnded.add(function():Void
-					{
-						PlayState.instance.camHUD.visible = false;
-
-						FlxG.sound.play(Paths.sound('Wind_Fadeout'));
-
-						FlxG.camera.fade(0xFFFFFFFF, 5, true, function():Void
-						{
-							PlayState.instance.camHUD.visible = true;
-							PlayState.instance.startConversation('release');
-						}, true);
-					});
-
+					VideoCutscene.play(file);
 					break;
 				}
 				else
@@ -71,6 +79,7 @@ class ReleaseSong extends Song
 		super.onSongRetry(event);
 
 		hasPlayedCutscene = true;
+		hasPlayedInGameCutscene = true;
 	}
 
 	public override function onCreate(event:ScriptEvent):Void
@@ -78,6 +87,7 @@ class ReleaseSong extends Song
 		super.onCreate(event);
 
 		hasPlayedCutscene = false;
+		hasPlayedInGameCutscene = false;
 	}
 
 	public override function onDialogueEnd():Void
