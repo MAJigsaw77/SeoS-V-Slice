@@ -27,11 +27,11 @@ class ReleaseSong extends Song
 	{
 		super.onCountdownStart(event);
 
-		if (!PlayStatePlaylist.isStoryMode)
+		/*if (!PlayStatePlaylist.isStoryMode)
 		{
 			hasPlayedCutscene = true;
 			hasPlayedInGameCutscene = true;
-		}
+		}*/
 
 		if (hasPlayedCutscene && !hasPlayedInGameCutscene)
 		{
