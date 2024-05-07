@@ -68,8 +68,6 @@ class ReleaseSong extends Song
 					VideoCutscene.play(file);
 					break;
 				}
-				else
-					trace(file + ' doesn\'t exists');
 			}
 		}
 	}
