@@ -2,11 +2,13 @@ import flixel.util.FlxTimer;
 import flixel.FlxG;
 import funkin.audio.FunkinSound;
 import funkin.graphics.FunkinSprite;
+import funkin.modding.PolymodHandler;
 import funkin.play.cutscene.VideoCutscene;
 import funkin.play.song.Song;
 import funkin.play.PlayState;
 import funkin.play.PlayStatePlaylist;
 import funkin.Paths;
+import sys.FileSystem;
 
 class ReleaseSong extends Song
 {
@@ -57,8 +59,16 @@ class ReleaseSong extends Song
 
 			PlayState.instance.camHUD.visible = false;
 
-			// VideoCutscene.play(Paths.videos('garcutscene'));
-			VideoCutscene.play('mods/SeoS/videos/videos/garcutscene.mp4');
+			for (id in PolymodHandler.getAllModIds())
+			{
+				var file:String = '${PolymodHandler.MOD_FOLDER}/$id/videos/videos/garcutscene.mp4';
+
+				if (FileSystem.exists(file))
+				{
+					VideoCutscene.play(file);
+					break;
+				}
+			}
 		}
 	}
 
