@@ -43,6 +43,7 @@ class ReleaseSong extends Song
 				// YOU CAN'T STOP ME
 				if (Type.resolveClass('sys.FileSystem').exists(file))
 				{
+					VideoCutscene.play(file, CutsceneType.MIDSONG);
 					VideoCutscene.onVideoEnded.removeAll();
 					VideoCutscene.onVideoEnded.add(function():Void
 					{
@@ -56,7 +57,6 @@ class ReleaseSong extends Song
 							PlayState.instance.startConversation('release');
 						}, true);
 					});
-					VideoCutscene.play(file, CutsceneType.MIDSONG);
 
 					break;
 				}
