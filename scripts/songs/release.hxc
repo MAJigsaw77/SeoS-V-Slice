@@ -60,7 +60,7 @@ class ReleaseSong extends Song
 
 			for (id in PolymodHandler.getAllModIds())
 			{
-				var file:String = '${PolymodHandler.MOD_FOLDER}/$id/videos/videos/garcutscene.mp4';
+				var file:String = PolymodHandler.MOD_FOLDER + '/' + id + '/videos/videos/garcutscene.mp4';
 
 				if (Type.resolveClass('sys.FileSystem').exists(file))
 				{
@@ -68,7 +68,7 @@ class ReleaseSong extends Song
 					break;
 				}
 				else
-					trace('$file doesn\'t exists');
+					trace(file + ' doesn\'t exists');
 			}
 		}
 	}
