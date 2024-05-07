@@ -62,6 +62,7 @@ class ReleaseSong extends Song
 			{
 				var file:String = PolymodHandler.MOD_FOLDER + '/' + id + '/videos/videos/garcutscene.mp4';
 
+				// YOU CAN'T STOP ME
 				if (Type.resolveClass('sys.FileSystem').exists(file))
 				{
 					VideoCutscene.play(file);
