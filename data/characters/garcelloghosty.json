@@ -25,7 +25,7 @@
 		},
 		{
 			"name": "singLEFT-hold",
-			"prefix": "garcello Sing Note LEFT"
+			"prefix": "garcello Sing Note LEFT",
 			"frameIndices": [0, 1, 2],
 			"offsets": [
 				0,
@@ -42,7 +42,7 @@
 		},
 		{
 			"name": "singDOWN-hold",
-			"prefix": "garcello Sing Note DOWN"
+			"prefix": "garcello Sing Note DOWN",
 			"frameIndices": [0, 1, 2],
 			"offsets": [
 				0,
@@ -59,7 +59,7 @@
 		},
 		{
 			"name": "singUP-hold",
-			"prefix": "garcello Sing Note UP"
+			"prefix": "garcello Sing Note UP",
 			"frameIndices": [0, 1, 2],
 			"offsets": [
 				0,
@@ -76,7 +76,7 @@
 		},
 		{
 			"name": "singRIGHT-hold",
-			"prefix": "garcello Sing Note RIGHT"
+			"prefix": "garcello Sing Note RIGHT",
 			"frameIndices": [0, 1, 2],
 			"offsets": [
 				0,
