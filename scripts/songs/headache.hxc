@@ -76,6 +76,8 @@ class HeadacheSong extends Song
 		super.onCreate(event);
 
 		hasPlayedCutscene = false;
+		
+		PlayState.instance.healthBar.createFilledBar(0xFF8E40A5, 0xFF66FF33);
 	}
 
 	public override function onDialogueEnd():Void

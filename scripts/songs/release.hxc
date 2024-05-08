@@ -36,19 +36,7 @@ class ReleaseSong extends Song
 		if (hasPlayedCutscene && !hasPlayedInGameCutscene)
 		{
 			hasPlayedInGameCutscene = true;
-
 			event.cancel();
-
-			PlayState.instance.camHUD.visible = false;
-
-			FlxG.sound.play(Paths.sound('Wind_Fadeout'));
-
-			FlxG.camera.fade(0xFFFFFFFF, 5, true, function():Void
-			{
-				PlayState.instance.camHUD.visible = true;
-
-				PlayState.instance.startConversation('release');
-			}, true);
 		}
 
 		if (!hasPlayedCutscene)
@@ -58,6 +46,7 @@ class ReleaseSong extends Song
 			event.cancel();
 
 			PlayState.instance.camHUD.visible = false;
+			PlayState.instance.camCutscene.bgColor = 0xFFFFFFFF;
 
 			for (id in PolymodHandler.getAllModIds())
 			{
@@ -65,6 +54,18 @@ class ReleaseSong extends Song
 
 				if (FileUtil.doesFileExist(file))
 				{
+					VideoCutscene.onVideoEnded.addOnce(() -> {
+						PlayState.instance.camHUD.visible = false;
+
+						FlxG.sound.play(Paths.sound('Wind_Fadeout'));
+						PlayState.instance.camCutscene.bgColor = null;
+						FlxG.camera.fade(0xFFFFFFFF, 5, true, function():Void
+						{
+							PlayState.instance.camHUD.visible = true;
+
+							PlayState.instance.startConversation('release');
+						}, true);
+					});
 					VideoCutscene.play(file);
 					break;
 				}
@@ -86,6 +87,8 @@ class ReleaseSong extends Song
 
 		hasPlayedCutscene = false;
 		hasPlayedInGameCutscene = false;
+
+		PlayState.instance.healthBar.createFilledBar(0xFF8E40A5, 0xFF66FF33);
 	}
 
 	public override function onDialogueEnd():Void
@@ -103,5 +106,10 @@ class ReleaseSong extends Song
 				if (PlayState.instance.currentStage.getDad().characterId == 'garcellodead')
 					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true, true);
 		}
+	}
+
+	function onVidEnd():Void
+	{
+		
 	}
 }
