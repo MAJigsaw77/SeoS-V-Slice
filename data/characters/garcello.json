@@ -6,6 +6,7 @@
 		"id": "gar",
 		"flipX": false
 	},
+	"singTime": 4.0,
 	"animations": [
 		{
 			"name": "idle",
@@ -24,26 +25,8 @@
 			]
 		},
 		{
-			"name": "singLEFT-hold",
-			"prefix": "garcello Sing Note LEFT",
-			"frameIndices": [0, 1, 2, 3],
-			"offsets": [
-				0,
-				0
-			]
-		},
-		{
 			"name": "singDOWN",
 			"prefix": "garcello Sing Note DOWN",
-			"offsets": [
-				0,
-				0
-			]
-		},
-		{
-			"name": "singDOWN-hold",
-			"prefix": "garcello Sing Note DOWN",
-			"frameIndices": [0, 1, 2, 3],
 			"offsets": [
 				0,
 				0
@@ -58,26 +41,8 @@
 			]
 		},
 		{
-			"name": "singUP-hold",
-			"prefix": "garcello Sing Note UP",
-			"frameIndices": [0, 1, 2, 3],
-			"offsets": [
-				0,
-				0
-			]
-		},
-		{
 			"name": "singRIGHT",
 			"prefix": "garcello Sing Note RIGHT",
-			"offsets": [
-				0,
-				0
-			]
-		},
-		{
-			"name": "singRIGHT-hold",
-			"prefix": "garcello Sing Note RIGHT",
-			"frameIndices": [0, 1, 2, 3],
 			"offsets": [
 				0,
 				0
