@@ -13,14 +13,12 @@ import funkin.Paths;
 class ReleaseSong extends Song
 {
 	var hasPlayedCutscene:Bool;
-	var hasPlayedInGameCutscene:Bool;
 
 	public function new():Void
 	{
 		super('release');
 
 		hasPlayedCutscene = false;
-		hasPlayedInGameCutscene = false;
 	}
 
 	public override function onCountdownStart(event:CountdownScriptEvent):Void
@@ -28,16 +26,7 @@ class ReleaseSong extends Song
 		super.onCountdownStart(event);
 
 		if (!PlayStatePlaylist.isStoryMode)
-		{
 			hasPlayedCutscene = true;
-			hasPlayedInGameCutscene = true;
-		}
-
-		if (hasPlayedCutscene && !hasPlayedInGameCutscene)
-		{
-			hasPlayedInGameCutscene = true;
-			event.cancel();
-		}
 
 		if (!hasPlayedCutscene)
 		{
@@ -54,11 +43,14 @@ class ReleaseSong extends Song
 
 				if (FileUtil.doesFileExist(file))
 				{
-					VideoCutscene.onVideoEnded.addOnce(() -> {
+					VideoCutscene.onVideoEnded.addOnce(function():Void
+					{
 						PlayState.instance.camHUD.visible = false;
 
 						FlxG.sound.play(Paths.sound('Wind_Fadeout'));
-						PlayState.instance.camCutscene.bgColor = null;
+
+						PlayState.instance.camCutscene.bgColor = 0x0;
+
 						FlxG.camera.fade(0xFFFFFFFF, 5, true, function():Void
 						{
 							PlayState.instance.camHUD.visible = true;
@@ -78,7 +70,6 @@ class ReleaseSong extends Song
 		super.onSongRetry(event);
 
 		hasPlayedCutscene = true;
-		hasPlayedInGameCutscene = true;
 	}
 
 	public override function onCreate(event:ScriptEvent):Void
@@ -86,7 +77,6 @@ class ReleaseSong extends Song
 		super.onCreate(event);
 
 		hasPlayedCutscene = false;
-		hasPlayedInGameCutscene = false;
 
 		PlayState.instance.healthBar.createFilledBar(0xFF8E40A5, 0xFF66FF33);
 	}
@@ -106,10 +96,5 @@ class ReleaseSong extends Song
 				if (PlayState.instance.currentStage.getDad().characterId == 'garcellodead')
 					PlayState.instance.currentStage.getDad().playAnimation('coolguy', true, true);
 		}
-	}
-
-	function onVidEnd():Void
-	{
-		
 	}
 }
