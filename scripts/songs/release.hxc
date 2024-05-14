@@ -3,6 +3,7 @@ import flixel.FlxG;
 import funkin.audio.FunkinSound;
 import funkin.graphics.FunkinSprite;
 import funkin.modding.PolymodHandler;
+import funkin.play.cutscene.CutsceneType;
 import funkin.play.cutscene.VideoCutscene;
 import funkin.play.song.Song;
 import funkin.play.PlayState;
@@ -58,7 +59,8 @@ class ReleaseSong extends Song
 							PlayState.instance.startConversation('release');
 						}, true);
 					});
-					VideoCutscene.play(file);
+					VideoCutscene.play(file, CutsceneType.MIDSONG);
+
 					break;
 				}
 			}
