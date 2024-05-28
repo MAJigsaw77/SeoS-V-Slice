@@ -5,11 +5,6 @@ Just a port of [Smoke 'Em Out Struggle](https://gamebanana.com/mods/166531) to F
 > [!CAUTION]
 > You have to unarchived the repository in order to play the modpack (this doesn't support the use of zip files), otherwise the `release` song cutscene won't play and you'll be soft locked.
 
-## TODO
-
-- Change the health bar color for `garcello` to purple.
-- Fix the pause between `release` song cutscene end and the camera fade.
-
 ## Credits
 
 | Avatar | UserName | Involvement |
